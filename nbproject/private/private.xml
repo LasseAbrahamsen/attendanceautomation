@@ -3,7 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/a/Desktop/attendanceautomation/src/attendanceautomation/gui/controller/MoreInfoController.java</file>
+            <file>file:/C:/Users/a/Desktop/attendanceautomation/src/attendanceautomation/be/Student.java</file>
+            <file>file:/C:/Users/a/Desktop/attendanceautomation/src/attendanceautomation/dal/MockData.java</file>
+            <file>file:/C:/Users/a/Desktop/attendanceautomation/src/attendanceautomation/gui/controller/OverviewController.java</file>
         </group>
     </open-files>
 </project-private>

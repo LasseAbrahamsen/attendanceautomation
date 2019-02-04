@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="126.0" prefWidth="389.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="attendanceautomation.gui.view.AddNewStudentController">
+   <children>
+      <VBox layoutX="11.0" layoutY="51.0" prefHeight="75.0" prefWidth="367.0" spacing="7.0">
+         <children>
+            <HBox prefHeight="14.0" prefWidth="367.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="99.0" text="student name: " />
+                  <TextField fx:id="textfieldName" prefHeight="31.0" prefWidth="264.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="10.0" prefWidth="367.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="99.0" text="attendance:" />
+                  <TextField fx:id="textfieldAttendance" prefHeight="31.0" prefWidth="264.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="4.0" prefWidth="367.0" />
+         </children>
+      </VBox>
+      <Label layoutX="99.0" layoutY="14.0" text="ADDING A STUDENT :^))))))))))" />
+   </children>
+</AnchorPane>

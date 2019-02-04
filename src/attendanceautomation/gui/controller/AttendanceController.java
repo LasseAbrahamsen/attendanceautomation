@@ -9,12 +9,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class AttendanceController implements Initializable {
     
     private Label label;
+    @FXML
+    private VBox hest;
+    @FXML
+    private Button button;
+    @FXML
+    private VBox ged;
     
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -23,7 +31,7 @@ public class AttendanceController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }
 
     @FXML

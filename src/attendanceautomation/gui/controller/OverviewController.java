@@ -2,6 +2,7 @@ package attendanceautomation.gui.controller;
 
 import attendanceautomation.be.Attendance;
 import attendanceautomation.be.Student;
+import attendanceautomation.gui.model.StudentModel;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -12,6 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class OverviewController implements Initializable {
@@ -20,14 +23,26 @@ public class OverviewController implements Initializable {
     private TableColumn<Student, String> colName;
     @FXML 
     private TableColumn<Attendance, Double> colAttendance;
+    @FXML
+    private TableView<Student> tableViewOverview;
+    
+    StudentModel sModel = new StudentModel();
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        colName.setCellValueFactory(new PropertyValueFactory("name"));
+        colAttendance.setCellValueFactory(new PropertyValueFactory("Attendance"));
+        reload();
     }    
+    
+    public void reload() {
+        if(sModel.getAllStudents() != null) {
+            tableViewOverview.setItems(sModel.getAllStudents());
+        }
+    }
     
     @FXML
     private void moreInfo(ActionEvent event) throws IOException {
@@ -37,6 +52,11 @@ public class OverviewController implements Initializable {
         stage.setScene(scene);
         stage.setTitle("More info on student");
         stage.show();
+    }
+    
+    @FXML
+    private void addStudent(ActionEvent event) {
+        //sModel.createStudent(name, 0, 0);
     }
     
 }
