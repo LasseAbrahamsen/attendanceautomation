@@ -34,7 +34,7 @@ public class OverviewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         colName.setCellValueFactory(new PropertyValueFactory("name"));
-        colAttendance.setCellValueFactory(new PropertyValueFactory("Attendance"));
+        colAttendance.setCellValueFactory(new PropertyValueFactory("attendance"));
         reload();
     }    
     
@@ -55,8 +55,13 @@ public class OverviewController implements Initializable {
     }
     
     @FXML
-    private void addStudent(ActionEvent event) {
-        //sModel.createStudent(name, 0, 0);
+    private void addStudent(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/attendanceautomation/gui/view/addNewStudent.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Adding new student");
+        stage.show();
     }
     
 }
