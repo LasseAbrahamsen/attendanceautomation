@@ -6,21 +6,21 @@ import java.util.ArrayList;
 public class MockData {
     
     private ArrayList<Student> students;
+    private int id;
     
     public ArrayList<Student> getAllStudents() {
+        //can add students here too like in jeppe example
+        
         return students;
     }
     
-    public void createStudent(String name, double attendance, int id) {
-        Student e = new Student(name, attendance, getLastId());
+    public void createStudent(String name, double attendance) {
+        id ++;
+        Student e = new Student(name, attendance, id);
         students.add(e);
     }
     
-    public int getLastId() {
-        return Integer.parseInt((students.get(students.size() + 1)).toString());
-    }
-    
-    public Student editStudent(String name, double attendance, int id) {
+    public Student editStudent(String name, double attendance) {
         Student e = new Student(name, attendance, id);
         return e;
     }

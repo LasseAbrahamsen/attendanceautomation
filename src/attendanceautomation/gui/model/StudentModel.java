@@ -20,12 +20,12 @@ public class StudentModel {
         }
     }
     
-    public void createStudent(String name, double attendance, int id) {
-        pass.createStudent(name, attendance, id);
+    public void createStudent(String name, double attendance) {
+        pass.createStudent(name, attendance);
     }
     
-    public Student editStudent(String name, double attendance, int id) {
-        return pass.editStudent(name, attendance, id);
+    public Student editStudent(String name, double attendance) {
+        return pass.editStudent(name, attendance);
     }
     
     public void removeStudent(Student e) {
