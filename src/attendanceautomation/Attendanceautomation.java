@@ -13,9 +13,7 @@ public class Attendanceautomation extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/attendanceautomation/gui/view/Attendance.fxml"));
         Parent root = (Parent) fxmlLoader.load();
-        AttendanceController controller = fxmlLoader.getController();
-        //controller.reload();
-        
+        //AttendanceController controller = fxmlLoader.getController();
         //root = FXMLLoader.load(getClass().getResource("/attendanceautomation/gui/view/Attendance.fxml"));
         stage.setScene(new Scene(root));
         stage.show();

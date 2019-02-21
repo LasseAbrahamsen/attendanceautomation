@@ -12,18 +12,18 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class AttendanceController implements Initializable {
     
+    @FXML private AnchorPane pane;
     @FXML private VBox hest;
     @FXML private VBox ged;
     @FXML private VBox æsel;
     @FXML private VBox enhjørning;
-    
-    Pane pane;
     
     int i;
     StudentModel smodel = new StudentModel();
@@ -85,7 +85,7 @@ public class AttendanceController implements Initializable {
         smodel.createStudent("y1", i);
         smodel.createStudent("z1", i);*/
         System.out.println(smodel.getAllStudents().size());
-        //generateButtons();
+        generateButtons();
     }
 
     @FXML
