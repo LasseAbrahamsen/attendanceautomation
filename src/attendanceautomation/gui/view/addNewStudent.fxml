@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="145.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomation.gui.controller.AddNewStudentController">
+<AnchorPane id="AnchorPane" prefHeight="169.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomation.gui.controller.AddNewStudentController">
    <children>
       <VBox layoutX="11.0" layoutY="51.0" prefHeight="75.0" prefWidth="367.0" spacing="7.0">
          <children>
@@ -27,6 +27,7 @@
          </children>
       </VBox>
       <Label layoutX="99.0" layoutY="14.0" text="ADDING A STUDENT :^))))))))))" />
-      <Button layoutX="334.0" layoutY="114.0" mnemonicParsing="false" onAction="#saveStudent" text="Save" />
+      <Button layoutX="261.0" layoutY="127.0" mnemonicParsing="false" onAction="#saveStudent" text="Save" />
+      <Button layoutX="326.0" layoutY="127.0" mnemonicParsing="false" onAction="#close" text="Close" />
    </children>
 </AnchorPane>

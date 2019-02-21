@@ -26,7 +26,7 @@ public class OverviewController implements Initializable {
     @FXML
     private TableView<Student> tableViewOverview;
     
-    StudentModel sModel = new StudentModel();
+    StudentModel smodel = new StudentModel();
 
     /**
      * Initializes the controller class.
@@ -39,8 +39,8 @@ public class OverviewController implements Initializable {
     }    
     
     public void reload() {
-        if(sModel.getAllStudents() != null) {
-            tableViewOverview.setItems(sModel.getAllStudents());
+        if(smodel.getAllStudents() != null) {
+            tableViewOverview.setItems(smodel.getAllStudents());
         }
     }
     

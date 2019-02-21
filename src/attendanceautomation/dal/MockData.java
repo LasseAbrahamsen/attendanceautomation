@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class MockData {
     
     private ArrayList<Student> students = new ArrayList();
-    private int id=1;
+    private int id;
     
     public ArrayList<Student> getAllStudents() {
         //can add students here too like in jeppe example
-        /*
-        students.clear();
+
+        /*students.clear();
         Student Lasse = new Student("Lasse", 88.0, 1);
         students.add(Lasse);
         Student Ajay = new Student("Ajay", 52.1, 2);
