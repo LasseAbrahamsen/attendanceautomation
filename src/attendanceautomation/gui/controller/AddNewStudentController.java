@@ -53,9 +53,9 @@ public class AddNewStudentController implements Initializable {
             Errorbox.displayError("Attendance must not be empty");
         }
         if (!isEditing) {
-            smodel.createStudent(studentName, attendance); 
+            smodel.createStudent(studentName); 
         } else {
-            smodel.editStudent(studentName, attendance);
+            //smodel.editStudent(studentName);
         }
         close();
     }

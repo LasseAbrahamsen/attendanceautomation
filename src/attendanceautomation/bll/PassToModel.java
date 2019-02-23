@@ -12,12 +12,12 @@ public class PassToModel {
         return mock.getAllStudents();
     }
     
-    public void createStudent(String name, double attendance) {
-        mock.createStudent(name, attendance);
+    public void createStudent(String name) {
+        mock.createStudent(name);
     }
     
-    public Student editStudent(String name, double attendance) {
-        return mock.editStudent(name, attendance);
+    public Student getStudent(String name) {
+        return mock.getStudent(name);
     }
     
     public void removeStudent(Student e) {

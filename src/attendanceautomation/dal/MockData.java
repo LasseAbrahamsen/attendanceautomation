@@ -19,15 +19,19 @@ public class MockData {
         return students;
     }
     
-    public void createStudent(String name, double attendance) {
+    public void createStudent(String name) {
         id ++;
-        Student e = new Student(name, attendance, id);
+        Student e = new Student(name, id);
         students.add(e);
     }
     
-    public Student editStudent(String name, double attendance) {
-        Student e = new Student(name, attendance, id);
-        return e;
+    public Student getStudent(String name) {
+        for(Student s : students) {
+            if(s.getName().equals(name)) {
+                return s;
+            }
+        }
+        return null;
     }
     
     public void removeStudent(Student e) {
